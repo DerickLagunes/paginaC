@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Grupo 3C - UTEZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #008d71; 
+            --secondary: #2c3e50;
+            --accent: #00b894;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .student-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .student-card {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border: 1px solid #eee;
+            text-decoration: none;
+            color: var(--text);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .student-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            border-color: var(--primary);
+        }
+
+        .avatar {
+            width: 50px;
+            height: 50px;
+            background: #e8f5e9;
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .name {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-bottom: 0.2rem;
+            text-transform: capitalize;
+        }
+
+        .matricula {
+            font-size: 0.85rem;
+            color: #777;
+            margin-bottom: 1rem;
+        }
+
+        .btn-link {
+            font-size: 0.8rem;
+            color: var(--primary);
+            border: 1px solid var(--primary);
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .student-card:hover .btn-link {
+            background: var(--primary);
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Directorio Grupo 3C</h1>
+    <p>Tecnologías de la Información - UTEZ</p>
+</header>
+
+<div class="container">
+    <div class="student-grid">
+        
+        <a href="UI_T9_osorio_alan/20253ds065.html" class="student-card">
+            <div class="avatar">AE</div>
+            <div class="name">Alan Eduardo Osorio</div>
+            <div class="matricula">20253ds065</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_albarran_alondra/20253ds068.html" class="student-card">
+            <div class="avatar">AR</div>
+            <div class="name">Alondra Raziel Albarran</div>
+            <div class="matricula">20253ds068</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_flores_angel/20253ds080.html" class="student-card">
+            <div class="avatar">AG</div>
+            <div class="name">Angel Gael Flores</div>
+            <div class="matricula">20253ds080</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_hernandez_angel/20253ds082.html" class="student-card">
+            <div class="avatar">AJ</div>
+            <div class="name">Angel Jesús Hernández</div>
+            <div class="matricula">20253ds082</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_brito_angel/20253ds090.html" class="student-card">
+            <div class="avatar">AS</div>
+            <div class="name">Angel Said Brito</div>
+            <div class="matricula">20253ds090</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_hernandez_arantza/20253ds071.html" class="student-card">
+            <div class="avatar">AS</div>
+            <div class="name">Arantza Saddai Hernández</div>
+            <div class="matricula">20253ds071</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_sanchez_axel/20253ds084.html" class="student-card">
+            <div class="avatar">AX</div>
+            <div class="name">Axel Sanchez</div>
+            <div class="matricula">20253ds084</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_apreza_carlos/20253ds088.html" class="student-card">
+            <div class="avatar">CA</div>
+            <div class="name">Carlos Apreza</div>
+            <div class="matricula">20253ds088</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_gomez_cristian/20253ds085.html" class="student-card">
+            <div class="avatar">CE</div>
+            <div class="name">Cristian Eduardo Gomez</div>
+            <div class="matricula">20253ds085</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_avila_diego/20233tn126.html" class="student-card">
+            <div class="avatar">DY</div>
+            <div class="name">Diego Yael Avila</div>
+            <div class="matricula">20233tn126</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_martinez_edwin/20253ds076.html" class="student-card">
+            <div class="avatar">ES</div>
+            <div class="name">Edwin Sebastian Martinez</div>
+            <div class="matricula">20253ds076</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_velez_gael/20253ds067.html" class="student-card">
+            <div class="avatar">GI</div>
+            <div class="name">Gael Ixaya Velez</div>
+            <div class="matricula">20253ds067</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_garcia_gerardo/20253ds066.html" class="student-card">
+            <div class="avatar">GE</div>
+            <div class="name">Gerardo García</div>
+            <div class="matricula">20253ds066</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_flores_irving/20253ds070.html" class="student-card">
+            <div class="avatar">IM</div>
+            <div class="name">Irving Manuel Flores</div>
+            <div class="matricula">20253ds070</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_velazquez_jairo/20253ds081.html" class="student-card">
+            <div class="avatar">JJ</div>
+            <div class="name">Jairo Jesus Velazquez</div>
+            <div class="matricula">20253ds081</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_hernandez_jonathan/20253ds073.html" class="student-card">
+            <div class="avatar">JJ</div>
+            <div class="name">Jonathan Josue Hernandez</div>
+            <div class="matricula">20253ds073</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_flores_jose/20253ds091.html" class="student-card">
+            <div class="avatar">JE</div>
+            <div class="name">José Eduardo Flores</div>
+            <div class="matricula">20253ds091</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_hurtado_jose/20253ds078.html" class="student-card">
+            <div class="avatar">JE</div>
+            <div class="name">Jose Elias Hurtado</div>
+            <div class="matricula">20253ds078</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_pantaleon_josue/20243ds088.html" class="student-card">
+            <div class="avatar">JS</div>
+            <div class="name">Josué Salvador Pantaleón</div>
+            <div class="matricula">20243ds088</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_rios_kevin/20253ds063.html" class="student-card">
+            <div class="avatar">KE</div>
+            <div class="name">Kevin Rios</div>
+            <div class="matricula">20253ds063</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_bahena_lucero/20253ds087.html" class="student-card">
+            <div class="avatar">LU</div>
+            <div class="name">Lucero Bahena</div>
+            <div class="matricula">20253ds087</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_jimenez_luis/20253ds069.html" class="student-card">
+            <div class="avatar">LF</div>
+            <div class="name">Luis Felipe Jimenez</div>
+            <div class="matricula">20253ds069</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_barron_luis/20253ds064.html" class="student-card">
+            <div class="avatar">LG</div>
+            <div class="name">Luis Gerardo Barrón</div>
+            <div class="matricula">20253ds064</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_avila_luis/20253ds092.html" class="student-card">
+            <div class="avatar">LJ</div>
+            <div class="name">Luis Javier Ávila</div>
+            <div class="matricula">20253ds092</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_sanchez_melisa/20253ds083.html" class="student-card">
+            <div class="avatar">MC</div>
+            <div class="name">Melisa Casandra Sanchez</div>
+            <div class="matricula">20253ds083</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_chavez_miguel/20253ds075.html" class="student-card">
+            <div class="avatar">MI</div>
+            <div class="name">Miguel Chávez</div>
+            <div class="matricula">20253ds075</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_valentin_oswaldo/20243rd023.html" class="student-card">
+            <div class="avatar">OS</div>
+            <div class="name">Oswaldo Valentin</div>
+            <div class="matricula">20243rd023</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_bahena_pedro/20253ds072.html" class="student-card">
+            <div class="avatar">PG</div>
+            <div class="name">Pedro Gael Bahena</div>
+            <div class="matricula">20253ds072</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_rodriguez_ramon/20253ds086.html" class="student-card">
+            <div class="avatar">RA</div>
+            <div class="name">Ramón Rodríguez</div>
+            <div class="matricula">20253ds086</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+        <a href="UI_T9_pacheco_yara/20253ds074.html" class="student-card">
+            <div class="avatar">YA</div>
+            <div class="name">Yara Ayme Pacheco</div>
+            <div class="matricula">20253ds074</div>
+            <span class="btn-link">Ver Proyecto</span>
+        </a>
+
+    </div>
+</div>
+
+<footer>
+    &copy; 2026 Universidad Tecnológica del Estado de Morelos - TI Grupo 3C
+</footer>
+
+</body>
+</html>
